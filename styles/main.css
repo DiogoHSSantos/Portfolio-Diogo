@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap');
+
+:root{
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza: #e4e4e4;
+    --corPrimaria: #93E56E;
+    --corSecundaria: #D1FA63;
+    --corClara: #B0AAFF;
+    --corNeutra: #5B48A3;
+    --corEscura: #1C0261;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: width 1s, height 1s;
+}
+
+body{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+header{
+    position: fixed;
+    background: transparent;
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    z-index: 10;
+}
+.nav{
+    border: 2px solid var(--cinza);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    transform: translateX(-200px);
+    transition: .5s;
+}
+.nav a{
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--cinza);
+}
+header span{
+    height: 10px;
+}
+header span i {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px;
+    cursor: pointer;
+    transform: translateX(-200px);
+    transition: .5s;
+    color: var(--cinza);
+}
+ span.active i{
+    transform: translateX(-25px);
+    cursor: pointer;
+}
+ .nav.active {
+    transform: translateX(0);
+}
+
+main{
+    height:100vh;
+}
+#home{
+    background: url(../images/background_home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: justify;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--cinza);
+    scroll-snap-align: start;
+}
+#home .foto{
+    background: url(../images/minhaFoto.jpg) no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#home h1{
+    font-size: 32px;
+    font-weight: 900;
+}
+#home h2 {
+    font-size: 28px;
+    font: 500;
+}
+#home p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#sobreMim{
+    height: 100vh;
+    background: var(--corEscura);
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobreMim-fundo{
+    width: 80%;
+    height: 85%;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    background: #00000050;
+    border-radius: 30px;
+    border: 2px solid var(--cinza);
+}
+
+.sobreMim-fundo p{
+    color: var(--cinza);
+    text-align:justify;
+    
+    font-size: 18px;
+    text-shadow: 1px 1px 0px #000000;
+}
