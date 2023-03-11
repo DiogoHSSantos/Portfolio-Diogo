@@ -91,7 +91,6 @@ main{
     gap: 20px;
     color: var(--cinza);
     scroll-snap-align: start;
-    display: none;
 }
 #home .foto{
     background: url(../images/minhaFoto.jpg) no-repeat;
@@ -123,7 +122,6 @@ main{
     align-items: center;
     justify-content: center;
     padding: 30px;
-    display: none;
 }
 .sobreMim-fundo{
     padding: 10px;
@@ -157,11 +155,12 @@ main{
 .contentProjetos{
     position: absolute;
     width: 80%;
-    height: 80%;
+    height: 90%;
     background: url(../images/backgroundProjetos.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding: 20px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,11 +171,15 @@ main{
 .contentProjetos h3{
     color: var(--cinza);
 }
+.areaProjetos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .areaProjetos a{
     width: 120px;
     height: 120px;
     border-radius: 20px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
