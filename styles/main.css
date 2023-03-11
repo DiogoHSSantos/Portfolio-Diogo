@@ -92,6 +92,14 @@ main{
     color: var(--cinza);
     scroll-snap-align: start;
 }
+.descricao-perfil{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
 #home .foto{
     background: url(../images/minhaFoto.jpg) no-repeat;
     background-size: cover;
@@ -170,6 +178,10 @@ main{
     gap: 20px;
 }
 
+.contentProjetos a {
+    text-decoration: none;
+}
+
 .contentProjetos h3{
     color: var(--cinza);
 }
@@ -242,7 +254,6 @@ main{
 #contato > #redes-sociais > ul li{
   position: relative;
   list-style: none;
-  width: 130px;
   background: #3e3f46;
   padding: 15px;
   transition: 0.6s;
@@ -321,7 +332,6 @@ main{
 .descricao-contato{
     text-align: center;
     font-weight: 700;
-    width: 100vw;
     padding: 30px;
 }
 #contato .descricao-contato  h1, p{

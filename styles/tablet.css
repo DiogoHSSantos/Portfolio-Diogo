@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+#home{
+    flex-direction: row;
+}
+
+.descricao-perfil{
+    width: 400px;
+}
+.contentProjetos{
+    font-size: 18px;
+}
+.areaProjetos{
+    flex-direction: row;
+}
+
+#contato{
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: 80px;
+}
+.descricao-contato{
+    width: 300px;
+
+}
