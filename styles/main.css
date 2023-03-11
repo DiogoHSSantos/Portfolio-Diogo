@@ -144,7 +144,7 @@ main{
     align-items: center;
 }
 .backgroundProjetos{
-    background: url(../images/backgroundProjetos.jpg) no-repeat;
+    background: url(../images/fundoRoxo.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     width: 90%;
@@ -156,11 +156,12 @@ main{
     position: absolute;
     width: 80%;
     height: 90%;
-    background: url(../images/backgroundProjetos.jpg) no-repeat;
+    background: url(../images/fundoRoxo.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding: 20px;
     border-radius: 20px;
+    border: 2px solid var(--corNeutra);
     display: flex;
     justify-content: center;
     align-items: center;
