@@ -18,13 +18,13 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    transition: width 1s, height 1s;
+    transition: width 1.5s, height 1.5s;
 }
 
 body{
     height: 100vh;
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
@@ -35,14 +35,14 @@ header{
     gap: 20px;
     width: 80%;
     z-index: 10;
+    height: 100%;
 }
 .nav{
     border: 2px solid var(--cinza);
     display: flex;
     flex-direction: column;
     padding: 20px;
-    backdrop-filter: blur(10px);
-    border-radius: 30px;
+    background: var(--cinza);
     transform: translateX(-200px);
     transition: .5s;
 }
@@ -50,8 +50,7 @@ header{
     color: var(--preto);
     text-decoration: none;
     font-size: 28px;
-    font-weight: 400;
-    color: var(--cinza);
+    font-weight: 500;
 }
 header span{
     height: 10px;
@@ -64,6 +63,7 @@ header span i {
     transform: translateX(-200px);
     transition: .5s;
     color: var(--cinza);
+    text-shadow: 2px 2px 0px #000000;
 }
  span.active i{
     transform: translateX(-25px);
@@ -72,10 +72,11 @@ header span i {
  .nav.active {
     transform: translateX(0);
 }
-
+/* --------------------------main---------------------- */
 main{
     height:100vh;
 }
+/* -----------------------------home------------------------ */
 #home{
     background: url(../images/background_home.jpg) no-repeat;
     background-size: cover;
@@ -99,40 +100,40 @@ main{
     border-radius: 50%;
 }
 #home h1{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 900;
 }
 #home h2 {
-    font-size: 28px;
+    font-size: 24px;
     font: 500;
 }
 #home p {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
 }
 
+/* ----------------------------Sobre mim------------------- */
+
 #sobreMim{
     height: 100vh;
-    background: var(--corEscura);
     scroll-snap-align: start;
+    background: var(--cinza);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
 }
 .sobreMim-fundo{
-    width: 80%;
-    height: 85%;
-    padding: 20px;
-    backdrop-filter: blur(5px);
-    background: #00000050;
-    border-radius: 30px;
-    border: 2px solid var(--cinza);
+    padding: 10px;
+    background: var(--branco);
+    border-radius: 20px;
 }
 
 .sobreMim-fundo p{
-    color: var(--cinza);
     text-align:justify;
-    
     font-size: 16px;
-    text-shadow: 1px 1px 0px #000000;
+    font-weight: 400;
 }
+
+/* ---------------------Projetos---------------------- */
+
