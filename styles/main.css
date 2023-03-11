@@ -133,6 +133,7 @@ main{
     text-align:justify;
     font-size: 16px;
     font-weight: 400;
+    color: var(--preto);
 }
 
 /* ---------------------Projetos---------------------- */
@@ -210,4 +211,128 @@ main{
     color: var(--preto);
     border: 2px solid var(--cinza);
     box-shadow: 5px 5px 10px #00000040;
+}
+
+/* -------------------contato----------------------- */
+#contato{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    background: url(../images/fundoRedesSociais.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#redes-sociais{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 140px;
+    text-align: center;
+}
+#contato > #redes-sociais > ul{
+  position:relative;
+  transform:skewY(-15deg);
+  font-size: 18px;
+}
+#contato > #redes-sociais > ul li{
+  position: relative;
+  list-style: none;
+  width: 130px;
+  background: #3e3f46;
+  padding: 15px;
+  transition: 0.6s;
+  z-index: var(--i);
+}
+#contato > #redes-sociais > ul li:hover{
+  transform: translateX(-20px);
+  background: var(--clr)
+    
+}
+#contato > #redes-sociais > ul li::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background: #3e3f46;
+  filter: brightness(0.7);
+  transform-origin: right;
+  transform: skewY(45deg);
+  
+  transition:0.5s;
+}
+#contato > #redes-sociais >  ul li:hover::before{
+  background: var(--clr);
+  filter: brightness(0.7);
+}
+#contato > #redes-sociais >  ul li::after{
+  content:'';
+  position:absolute;
+  top: -40px;
+  left: 0px ;
+  width:100%;
+  height: 40px;
+  background: #3e3f46;
+  filter: brightness(0.9);
+  transform-origin:bottom;
+  transform: skewx(45deg);
+  transition: 0.5s;
+}
+#contato > #redes-sociais >  ul li:hover::after{
+  background: var(--clr);
+  filter: brightness(0.9);
+}
+#contato > #redes-sociais >  ul a {
+  text-decoration:none;
+  color:#999;
+  display: block;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+#contato > #redes-sociais >  ul a li:hover{
+  color:#fff;
+}
+#contato > #redes-sociais > ul a li span{
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  transform-origin: right;
+  transform: skewY(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  font-size:1.25em;
+  
+  transition:0.5s;
+}
+#contato > #redes-sociais >  ul a li:hover span{
+  opacity: 1;
+}
+
+.descricao-contato{
+    text-align: center;
+    font-weight: 700;
+    width: 100vw;
+    padding: 30px;
+}
+#contato .descricao-contato  h1, p{
+    color: #fff;
+}
+#contato .descricao-contato  h1{
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #000;
+}
+#contato .descricao-contato  p{
+    text-align: justify;
+    text-indent: 40px;
+    font-size: 16px;
 }
