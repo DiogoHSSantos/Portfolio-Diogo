@@ -23,6 +23,7 @@
     transition: width 1.5s, height 1.5s;
 }
 
+
 body{
     overflow-y: scroll;
 }
@@ -345,4 +346,9 @@ main{
     text-align: justify;
     text-indent: 40px;
     font-size: 16px;
+    color: #7a4e30;
+    color: #a15c2e;
+    color: #080261;
+    color: #170aca;
+    color: #03063a;
 }
