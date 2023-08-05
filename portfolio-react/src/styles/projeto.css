@@ -1,0 +1,78 @@
+:root{
+    --cinzaEscuro: #565656;
+    --claro: #e4e4e4;
+}
+
+/* -------------------------------- */
+
+.allProjectArea{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 80px;
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
+.projeto{
+    width: 230px;
+    height: 230px;
+    position: relative;
+
+    padding: 20px;
+    border: 2px solid transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--cinzaEscuro);
+    
+    transition: .2s;
+}
+.projeto:hover{
+    background: transparent;
+    border: 2px solid var(--claro);
+}
+
+/* ---------------------------------- */
+
+.descriptionProjectArea{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    color: var(--claro);
+}
+.projetoTitle{
+    font-size: 1.5em;
+    text-align: center;
+}
+.projetoDescription{
+    font-size:1em;
+    text-align: center;
+}
+
+/* ----------------------------------- */
+
+.linkProjectsArea{
+    display: flex;
+    gap: 30px;
+}
+.linkProjectsArea i{
+    color: var(--claro);
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* c---------------------------------- */
+
+.logoLinguagemProjeto{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+}

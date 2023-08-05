@@ -1,0 +1,41 @@
+:root{
+    --cinzaEscuro: #565656;
+    --codigoVerde: #5aff51;
+}
+
+/* ---------------------------------------- */
+
+.areaContato{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+}
+.areaContato a{
+    color: var(--claro);
+    text-decoration: none;
+}
+
+/* ---------------------------------------- */
+
+.itemContato{
+    width:100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    border: 1px solid  var(--cinzaEscuro);
+    border-right: 5px solid var(--codigoVerde);
+    border-left: 5px solid var(--codigoVerde);
+
+    cursor: pointer;
+}
+
+.itemContato i{
+    font-size: 1.6em;
+}
+

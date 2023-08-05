@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700;900&display=swap');
+
+
+/* --------------------------------------------------------------- */
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+     --escuro: #121212;
+     --cinzaEscuro: #565656;
+     --claro: #e4e4e4;
+     --dracula: #21222c;
+     --branco: #ffffff;
+     --preto: #000000;
+     --codigoVerde: #5aff51;
+     --fundoProjeto: #ff8e8efd;
+}
+
+/* --------------------------------------------------------------- */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+    cursor: context-menu;
+    scroll-behavior: smooth;
+}
+.pStyle{
+    color: var(--cinzaEscuro);
+    text-align: justify;
+}
+
+/* --------------------------------------------------------------- */
+
+body{
+    background:var(--escuro);
+
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------------------------------------------------------- */
+
+.btnMenu{
+    width: 50px;
+    height: 50px;
+    
+    background: var(--escuro);
+
+    position: fixed;
+    right: 10px;
+    z-index: 1000;
+    
+    margin: 20px 10px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:6px;
+    
+    cursor: pointer;
+}
+  
+.line{
+    width: 25px;
+    height:2px;
+    background: var(--branco);
+    
+    cursor: pointer;
+    transition: .3s;
+}
+.line1Active{
+    transform: translateY(8px) rotate(45deg);
+}
+.line2Active{
+    transform: translateX(30px);
+    opacity: 0;
+}
+.line3Active{
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* --------------------------------------------------------------- */
+  
+.navArea{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    height: 100vh;
+    width: 100%;
+    background: var(--dracula);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    transition: .5s;
+    transform: translateY(-100%);
+}
+.navAreaActive{
+    transform: translateY(0);
+}
+
+.sobreCertificados{
+    position: absolute;
+    top: 100px;
+
+    padding: 30px;
+}
+
+.MenuAll{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.MenuAll p{
+    color: var(--cinzaEscuro);
+    font-size: 1.3em;
+}
+
+
+.contatoRapido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.iconsContatoRapido{
+    display: flex;
+    justify-content: space-between;
+}
+.iconsContatoRapido  i{
+    color: var(--codigoVerde);
+    font-size: 2.5em;
+
+    transition: .3s;
+    cursor: pointer;
+}
+.iconsContatoRapido i:hover{
+    transform: scale(1.3);
+}
+
+
+.navSite{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+}
+.navSite a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.2em;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+.navSite a:hover{
+    letter-spacing: 2px;
+}
+
+/* --------------------------------------------------------------- */
+
+.content{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --------------------------------------------------------------- */
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Home h2{
+    color: var(--codigoVerde);
+}
+
+
+.logo{
+    position: absolute;
+    top:0;
+
+    width: 80px;
+    margin: 20px;
+}
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+}
+
+
+.apresentationName{
+    color: var(--claro);
+}
+.name{
+    color: var(--branco);
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+
+.ilustracao{
+    height: 100px;
+    width: 100%;
+
+    position: absolute;
+    bottom:0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: var(--codigoVerde);
+}
+.ilustracao::before{
+    content: '';
+    height: 200px;
+    width: 200px;
+
+    position: absolute;
+    top:-50%;
+
+    background-color: var(--codigoVerde);
+
+    border-radius: 50%;
+
+}
+.ilustracao h1{
+    z-index: 5;
+}
+
+/* --------------------------------------------------------------- */
+
+#Projects{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.projectsTitle{
+    color: var(--claro);
+    text-align: justify;
+}
+
+
+.areaScrollProjetos{
+    height: 70%;
+    width: 90%;
+    
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px;
+    border: 2px solid var(--cinzaEscuro);
+    border-radius: 20px;
+
+    overflow: scroll;
+}
+
+
+.dicaProjeto{
+    position: absolute;
+    top: 0px;
+    padding: 10px 30px;
+}
+
+/* --------------------------------------------------------------- */
+
+#Contato{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 60px;
+    flex-direction: column;
+
+    padding: 30px;
+}
+
+
+.descriptionContact{
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1.3em;
+    color: var(--claro);
+}
+
+
+.contatoCelular{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.email, .celular{
+    display: inline;
+    cursor: text;
+}
+
+.contatoCelular h2{
+    color: var(--claro);
+    font-size: 1.2em;
+}
+
+
+.noTel{
+    font-size: .8em;
+}
+
+/* --------------------------------------------------------------- */
+
+#Observacoes{
+    height: 300px;
+    width: 100vw;
+    padding: 0px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.agradecimentos{
+    color: var(--cinzaEscuro);
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+.logoObservacoes{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+}
