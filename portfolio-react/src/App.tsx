@@ -1,15 +1,16 @@
 // ¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹
-import './styles/mobileLandscape.css'
-import './styles/mobile.css'
 
-import './styles/tablets.css'
-import './styles/desktop.css'
+import './styles/mobile.css';
+import './styles/mobileLandscape.css';
 
-import {useState} from 'react'
+import './styles/tablets.css';
+import './styles/desktop.css';
 
-import logo from './assets/LogoDiogo.png' 
+import {useState} from 'react';
 
-import Projeto from './components/projetos'
+import logo from './assets/LogoDiogo.png' ;
+
+import Projeto from './components/projetos';
 import Contato from './components/contato';
 
 // ¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹
@@ -28,14 +29,6 @@ function App() {
 
 
   const[navArea, setNavArea] = useState('navArea');
-
-  
-
-
-  
-  
-
-
 
   const animacaoMenu = ()=>{
     line1 =='line1 line'?setTimeout(()=>{setLine1('line1 line line1Active')}, 300):setLine1('line1 line');
@@ -108,7 +101,7 @@ function App() {
               <h1  className="name">Diogo Henrique</h1>
             </div>
             <h2>Front-end developer</h2>
-            <p className='pStyle'>Sou desenvolvedor Front-End Júnior, seja bem vindo(a) ao meu portfolio ! Se precisar de ajuda, basta clicar no menu acima </p>
+            <p className='pStyle'>Sou desenvolvedor Front-End Júnior, seja bem vindo(a) ao meu portfolio! Se precisar de ajuda, basta clicar no menu acima. </p>
           </div>
 
           <div className='ilustracao'>
@@ -162,8 +155,10 @@ function App() {
 
         <div className='content' id='Observacoes'>
           <p className="agradecimentos">Todo esse portfólio foi produzido com ReactJS e TypesCript. Fiz adaptações com Media Query (CSS) para torna-lo responsivo, portanto, para melhor experiência você pode acessá-lo em qualquer plataforma.</p>
-          <p className='agradecimentos'>Obrigado Por acessar meu portfólio, melhorias chegarão em breve.</p>
-          <img src={logo} alt="" className='logoObservacoes'/>
+          <div className="ultimoPar">
+            <p className='agradecimentos'>Obrigado Por acessar meu portfólio, melhorias chegarão em breve.</p>
+            <img src={logo} alt="" className='logoObservacoes'/>
+          </div>
         </div>
         
       </div>

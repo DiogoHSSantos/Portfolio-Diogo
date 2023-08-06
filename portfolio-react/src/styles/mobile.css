@@ -202,7 +202,7 @@ body{
     top:0;
 
     width: 80px;
-    margin: 20px;
+    margin: 0px 25px;
 }
 
 
@@ -275,14 +275,13 @@ body{
 
 .areaScrollProjetos{
     height: 60%;
-    width: 80%;
+    width: 100%;
     
     position: relative;
 
     display: flex;
     justify-content: center;
 
-    padding: 10px;
     border: 2px solid var(--cinzaEscuro);
     border-radius: 20px;
 
@@ -302,9 +301,8 @@ body{
     display: flex;
     align-items: start;
     justify-content: center;
-    gap: 60px;
     flex-direction: column;
-
+    gap: 20px;
     padding: 30px;
 }
 
@@ -312,7 +310,7 @@ body{
 .descriptionContact{
     text-indent: 20px;
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: var(--claro);
 }
 
@@ -323,10 +321,11 @@ body{
     gap: 20px;
 }
 
-
-.email, .celular{
-    display: inline;
-    cursor: text;
+.contatoCelular .email{
+    font-size: 1em ;
+}
+.contatoCelular .celular{
+    font-size: 1em;
 }
 
 .contatoCelular h2{
@@ -360,11 +359,17 @@ body{
     text-indent: 20px;
 }
 
+.ultimoPar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ultimoPar p {
+    width: 200px;
+}
 
 .logoObservacoes{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
     width: 80px;
 }
 

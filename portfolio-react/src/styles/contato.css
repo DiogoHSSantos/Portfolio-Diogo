@@ -13,6 +13,12 @@
     flex-direction: column;
 
 }
+.columnContact{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
 .areaContato a{
     color: var(--claro);
     text-decoration: none;
