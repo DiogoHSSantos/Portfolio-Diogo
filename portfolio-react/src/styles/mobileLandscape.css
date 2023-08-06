@@ -1,4 +1,97 @@
-@media screen and (min-width: 812px)
+@media (max-height: 370px) and (orientation: landscape)
 {
+    /* ------------------------------------------------------- */
+
+    .navArea{
+        padding: 0px 90px;
+    }
+
+    .MenuAll{
+        margin-top: 40px;
+    }
+    .sobreCertificados{
+        top: 20px;
+        padding: 0px 90px;
+    }
+
+   /* ------------------------------------------------------- */
     
+
+
+    .logo{
+        width: 60px;
+        margin-left: 30px;
+        top: 20px;
+    }
+
+    .description{
+        gap: 0px;
+        flex-direction: row;
+        padding: 0px 30px;
+        margin-bottom:30px;
+
+    }
+    .description div{
+        width: 50%;
+    }
+    .description1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .name{
+        font-size: 1.8em;
+    }
+
+
+   .ilustracao{
+    height: 50px;
+   }
+
+   .ilustracao::before{
+    width: 100px;
+    height: 100px;
+   }
+
+   .ilustracao h1{
+    font-size: 1.3em;
+   }
+
+   /* ------------------------------------------------------- */
+
+   #Projects{
+    flex-direction: row;
+   }
+
+   .areaScrollProjetos{
+    height: 80%;
+   }
+
+   /* ------------------------------------------------------- */
+
+   #Contato{
+    padding: 0px 50px;
+    gap: 10px;
+   }
+   .contatoCelular{
+    flex-direction: row;
+   }
+   .contatoCelular div{
+    padding: 0px 5px;
+   }
+
+   /* ------------------------------------------------------- */
+
+   #Observacoes{
+    height: 70vh;
+   }
+
+   .ultimoPar{
+    justify-content: start;
+    gap: 30px;
+   }
+   .ultimoPar p{
+    width: 100%;
+   }
 }

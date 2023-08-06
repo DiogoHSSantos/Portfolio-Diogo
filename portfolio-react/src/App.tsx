@@ -96,12 +96,14 @@ function App() {
           <img src={logo} alt="Logo" className='logo' />
 
           <div className="description">
-            <div>
+            <div className='description1'>
               <p className='apresentationName'>olá, eu sou -</p>
               <h1  className="name">Diogo Henrique</h1>
             </div>
-            <h2>Front-end developer</h2>
-            <p className='pStyle'>Sou desenvolvedor Front-End Júnior, seja bem vindo(a) ao meu portfolio! Se precisar de ajuda, basta clicar no menu acima. </p>
+            <div className='description2'>
+              <h2>Front-end developer</h2>
+              <p className='pStyle'>Sou desenvolvedor Front-End Júnior, seja bem vindo(a) ao meu portfolio! Se precisar de ajuda, basta clicar no menu acima. </p>
+            </div>
           </div>
 
           <div className='ilustracao'>

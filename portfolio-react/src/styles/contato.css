@@ -46,3 +46,10 @@
     font-size: 1.6em;
 }
 
+/* ---------------------------------------- */
+
+@media (max-height: 370px) and (orientation: landscape){
+    .columnContact{
+        flex-direction: row;
+    }
+}
