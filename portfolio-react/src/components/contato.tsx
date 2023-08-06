@@ -1,4 +1,8 @@
+
+
 import '../styles/contato.css'
+import '../styles/mobileLandscape.css'
+
 
 const Linkedin = 'https://www.linkedin.com/in/diogo-henrique-22732221b/';
 const GitHub = 'https://github.com/DiogoHSSantos';

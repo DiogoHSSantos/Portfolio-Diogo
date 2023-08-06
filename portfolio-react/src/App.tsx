@@ -1,22 +1,41 @@
 // ¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹
-import './styles/main.css'
+import './styles/mobileLandscape.css'
+import './styles/mobile.css'
+
+import './styles/tablets.css'
+import './styles/desktop.css'
+
 import {useState} from 'react'
+
 import logo from './assets/LogoDiogo.png' 
+
 import Projeto from './components/projetos'
 import Contato from './components/contato';
 
 // ¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹¹
 
 
+
 function App() {
 
 // *************************************************************************
+
+
 
   const[line1, setLine1]= useState('line1 line');
   const[line2, setLine2]= useState('line2 line');
   const[line3, setLine3]= useState('line3 line');
 
-  const[navArea, setNavArea] = useState('navArea')
+
+  const[navArea, setNavArea] = useState('navArea');
+
+  
+
+
+  
+  
+
+
 
   const animacaoMenu = ()=>{
     line1 =='line1 line'?setTimeout(()=>{setLine1('line1 line line1Active')}, 300):setLine1('line1 line');
@@ -35,6 +54,7 @@ function App() {
     setNavArea('navArea')
   }
 
+  
 // **************************************************************************
 
   return (
@@ -78,7 +98,7 @@ function App() {
 
       <div>
 
-        <div className="content " id='Home'>
+        <div className='content' id='Home'>
           
           <img src={logo} alt="Logo" className='logo' />
 
@@ -99,7 +119,7 @@ function App() {
 
         {/* --------------------------------------------------------------- */}
 
-        <div className="content " id='Projects'>
+        <div className='content' id='Projects'>
           
           <div>
             <p className='pStyle'>Meus Projetos -</p>
@@ -115,7 +135,7 @@ function App() {
 
         {/* --------------------------------------------------------------- */}
 
-        <div className="content " id='Contato'>
+        <div className='content' id='Contato'>
 
           <div>
             <p className="pStyle">Redes sociais e contato -</p>
@@ -140,7 +160,7 @@ function App() {
 
         {/* --------------------------------------------------------------- */}
 
-        <div className="content" id='Observacoes'>
+        <div className='content' id='Observacoes'>
           <p className="agradecimentos">Todo esse portfólio foi produzido com ReactJS e TypesCript. Fiz adaptações com Media Query (CSS) para torna-lo responsivo, portanto, para melhor experiência você pode acessá-lo em qualquer plataforma.</p>
           <p className='agradecimentos'>Obrigado Por acessar meu portfólio, melhorias chegarão em breve.</p>
           <img src={logo} alt="" className='logoObservacoes'/>

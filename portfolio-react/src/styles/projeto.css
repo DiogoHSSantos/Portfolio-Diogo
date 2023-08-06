@@ -10,7 +10,7 @@
     flex-direction: column;
     gap: 20px;
     position: absolute;
-    top: 80px;
+    top: 70px;
     padding: 20px;
 }
 
@@ -58,8 +58,16 @@
 
 /* ----------------------------------- */
 
+.navPArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .linkProjectsArea{
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 .linkProjectsArea i{
@@ -71,8 +79,7 @@
 /* c---------------------------------- */
 
 .logoLinguagemProjeto{
-    position: absolute;
     bottom: 5px;
     right: 5px;
-    width: 50px;
+    width: 40px;
 }

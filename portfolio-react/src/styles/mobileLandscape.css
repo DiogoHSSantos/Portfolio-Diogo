@@ -1,0 +1,94 @@
+@media screen and (min-width: 812px) and (orientation: landscape)
+{
+    .pStyle{
+        font-size: .9em;
+    }
+
+    /* --------------------------------------------------------------- */
+
+    .sobreCertificados{
+        top: 20px;
+        padding: 0px 120px;
+    }
+
+    /* --------------------------------------------------------------- */
+
+    .logo{
+        width: 50px;
+        margin: 20px 100px;
+    }
+
+    .description{
+        padding: 0px 100px;
+        gap: 0px;
+    }
+
+    .apresentationName{
+        font-size: .9em;
+    }
+    .name{
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    .ilustracao{
+        height: 50px;
+    }
+    .ilustracao::before{
+        height: 100px;
+        width: 100px;
+    }
+    .ilustracao h1{
+        font-size: 1.4em;
+    }
+
+    /* --------------------------------------------------------------- */
+
+    #Projects{
+        flex-direction: row;
+        gap: 0;
+    }
+    .projectsTitle{
+        font-size: 1.3em;
+        width: 80%;
+    }
+    .areaScrollProjetos{
+        height: 80%;
+        width: 100%;
+    }
+    .dicaProjeto{
+        width: 300px;
+    }
+    
+    /* --------------------------------------------------------------- */
+
+    #Contato{
+        padding: 60px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    div.areaContato{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .descriptionContact{
+        font-size: 1.2em;
+    }
+    h2.email{
+        font-size: 1.1em;
+    }
+
+    div.contatoCelular{
+        flex-direction: row;
+    }
+
+    /* --------------------------------------------------------------- */
+
+    #Observacoes{
+        padding: 0px 80px;
+        height: 50vh;
+    }
+}
