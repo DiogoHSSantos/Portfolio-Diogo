@@ -243,15 +243,18 @@ body{
     height: 200px;
     width: 200px;
 
-    position: absolute;
-    top:-50%;
+    position: relative;
+    top:0;
 
     background-color: var(--codigoVerde);
 
     border-radius: 50%;
+    
+    transition: .5s;
 
 }
 .ilustracao h1{
+    position: absolute;
     z-index: 5;
 }
 

@@ -3,7 +3,6 @@
 import './styles/mobile.css';
 import './styles/mobileLandscape.css';
 
-import './styles/tabletsLandscape.css';
 import './styles/desktop.css';
 
 import {useState} from 'react';
@@ -144,8 +143,8 @@ function App() {
               <p className="pStyle">E-mail-</p>
               <h2 className='email'>DiogoDeveloperJob@gmail.com</h2>
             </div>
-            <div>
-              <p className="pStyle">Celular-</p>
+            <div className='ContatoCelularArea'>
+              <p className="pStyle titleCelular">Celular-</p>
               <h2 className='celular'>(+55)11 9 5878-4456</h2>
               <p className="pStyle noTel">(No momento, eu Estou sem celular. Por favor entre em contato através do E-mail, Instagram ou LinkedIn)</p>
             </div>

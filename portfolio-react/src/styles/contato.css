@@ -48,8 +48,25 @@
 
 /* ---------------------------------------- */
 
-@media (max-height: 370px) and (orientation: landscape){
+@media (max-height: 480px) and (orientation: landscape){
     .columnContact{
         flex-direction: row;
+    }
+}
+
+@media (min-width: 769px){
+    .columnContact{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itemContato{
+        width: 70%;
+    }
+
+    .areaContato a{
+        display: flex;
+        justify-content: center;
     }
 }
