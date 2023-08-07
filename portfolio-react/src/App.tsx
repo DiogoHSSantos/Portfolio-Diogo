@@ -3,7 +3,7 @@
 import './styles/mobile.css';
 import './styles/mobileLandscape.css';
 
-import './styles/tablets.css';
+import './styles/tabletsLandscape.css';
 import './styles/desktop.css';
 
 import {useState} from 'react';
