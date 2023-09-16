@@ -146,7 +146,6 @@ function App() {
             <div className='ContatoCelularArea'>
               <p className="pStyle titleCelular">Celular-</p>
               <h2 className='celular'>(+55)11 9 5878-4456</h2>
-              <p className="pStyle noTel">(No momento, eu Estou sem celular. Por favor entre em contato através do E-mail, Instagram ou LinkedIn)</p>
             </div>
           </div>
 
