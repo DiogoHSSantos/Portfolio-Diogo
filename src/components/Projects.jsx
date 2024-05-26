@@ -1,5 +1,7 @@
 import '../styles/phone-style-components/projects.sass'
 import '../styles/tablet-style-components/projects.sass'
+import '../styles/desktop-style-components/projects.sass'
+
 import listaDeProjetos from './lista-projetos.js'
 
 const Projects = ()=>{

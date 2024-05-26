@@ -1,5 +1,6 @@
 import '../styles/phone-style-components/home.sass'
-import '../styles/tablet-style-components/home.sass'
+import '../styles/tablet-style-components/home.sass' 
+import '../styles/desktop-style-components/home.sass' 
 
 const Home = ()=>{
     return(

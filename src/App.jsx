@@ -9,11 +9,15 @@ function App() {
 
   return (
     <section className='main-content'>
-      <Menu />
-      <Home />
-      <About />
-      <Projects />
-      <Agradecimentos />
+      <div className="menu-home">
+        <Menu />
+        <Home />
+      </div>
+      <div className="about-projects-agradecimentos">
+        <About />
+        <Projects />
+        <Agradecimentos />
+      </div>
     </section>
   )
 }

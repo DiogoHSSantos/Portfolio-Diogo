@@ -1,0 +1,51 @@
+@use '../variables'
+@use '../mixins'
+
+@media only screen and (min-width: 850px)
+    #menu-content
+        margin-top: 30px
+
+        
+
+        .menu-burger
+            display: none
+
+        .menu-area
+            margin-top: 30px
+            margin-left: 100px
+            @include mixins.center
+            align-items: start  
+            gap: 10px
+
+            z-index: 99
+
+        
+            .home-none
+                display: none
+            
+            .nav-item-menu
+                position: relative
+                color: variables.$cor-fonte
+                text-decoration: none 
+                font-size: 20px
+                font-weight: bold 
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 30px
+
+            
+
+                .line-menu
+                    content: ''
+                    height: 0px
+                    border: 2px solid variables.$cor-ciano
+                    width: 80px
+
+            .nav-item-menu:hover
+                color: variables.$cor-ciano
+
+                
+
+        
+

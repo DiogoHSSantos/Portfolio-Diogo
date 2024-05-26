@@ -1,5 +1,6 @@
 import '../styles/phone-style-components/about.sass'
 import '../styles/tablet-style-components/about.sass'
+import '../styles/desktop-style-components/about.sass'
 
 const About = ()=>{
     return(

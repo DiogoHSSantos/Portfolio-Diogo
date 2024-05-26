@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/phone-style-components/menu.sass'
 import '../styles/tablet-style-components/menu.sass'
+import '../styles/desktop-style-components/menu.sass'
 
 const Menu = ()=>{
 
@@ -26,7 +27,7 @@ const Menu = ()=>{
             </button>
 
             <div className={menuArea}>
-                <a href="#Home" className="nav-item-menu" onClick={desativarMenu}>Home <span className="line-menu"></span></a>
+                <a href="#Home" className="nav-item-menu" onClick={desativarMenu}><p className='home-none'>Home</p> <span className="line-menu home-none"></span></a>
                 <a href="#About" className="nav-item-menu" onClick={desativarMenu}>About <span className="line-menu"></span></a>
                 <a href="#Projects" className="nav-item-menu" onClick={desativarMenu}>Projects <span className="line-menu"></span></a>
             </div>

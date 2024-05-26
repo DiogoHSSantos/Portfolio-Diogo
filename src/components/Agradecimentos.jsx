@@ -1,5 +1,6 @@
 import '../styles/phone-style-components/agradecimentos.sass'
 import '../styles/tablet-style-components/agradecimentos.sass'
+import '../styles/desktop-style-components/agradecimentos.sass'
 
 const Agradecimentos = ()=>{
     return(
