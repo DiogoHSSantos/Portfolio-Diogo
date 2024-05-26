@@ -1,0 +1,33 @@
+
+@use '../mixins'
+@use '../variables'
+
+@media only screen and (max-width: 400px) and (orientation: portrait)
+    
+    .agradecimentos
+        width: 100%
+        height: 200px
+        @include mixins.center
+
+        p
+            color: #ffffff50
+            font-size: 14px
+            text-align: justify
+            text-indent: 20px
+            width: 285px
+            font-weight: 300
+
+@media only screen and (min-width: 400px) and (max-width: 850px) and (orientation: landscape)
+
+    .agradecimentos
+        width: 100%
+        height: 200px
+        @include mixins.center
+
+        p
+            color: #ffffff50
+            font-size: 14px
+            text-align: justify
+            text-indent: 20px
+            width: 60%
+            font-weight: 300

@@ -1,0 +1,150 @@
+@use '../mixins'
+@use '../variables'
+
+
+@media only screen and (max-width: 700px) and (orientation: portrait)    
+    #Home
+        width: 100%
+
+        .titulo
+            @include mixins.center
+            justify-content: start
+            padding-top: 112px
+            
+            h1
+                color: variables.$cor-fonte
+                font-weight: bold
+                font-size: 34px
+
+            .cor-rosa
+                color: variables.$cor-rosa
+
+        .line
+            content: ''
+            position: relative  
+
+            @include mixins.center
+            margin: auto
+
+            margin-top: 25px 
+            width: 250px
+            border: 2px solid variables.$cor-ciano
+
+        .frase-impactante
+            width: 265px
+            margin: auto
+            text-align: center
+            font-size: 20px
+            margin-top: 25px
+            font-weight: 300
+            color: variables.$cor-fonte-maisCalara
+
+        .link-curriculo-btn
+            @include mixins.center
+            text-decoration: none
+            margin-top: 35px
+
+            .curriculo-btn
+                width: 250px
+                height: 90px
+                @include mixins.center
+                border: 2px solid variables.$cor-ciano
+                border-radius: 20px
+                color: variables.$cor-rosa
+                font-size: 20px
+                font-weight: bold
+                background: variables.$fundo-cinza
+                
+        .meios-de-contato
+            @include mixins.center
+            flex-direction: row
+            gap: 20px
+            margin-top: 40px
+
+            a
+                color: variables.$cor-fonte-maisCalara
+                text-decoration: none
+                
+                i
+                    font-size: 50px
+
+
+@media only screen and (min-width: 400px) and (max-width: 850px) and (orientation: landscape) 
+
+     #Home
+        width: 100%
+
+
+        .content-home-area
+            @include mixins.center
+            flex-direction: row
+            gap: 50px
+
+            .titulo
+                @include mixins.center
+                justify-content: start
+                padding-top: 70px
+                
+                
+                h1
+                    color: variables.$cor-fonte
+                    font-weight: bold
+                    font-size: 34px
+
+                .cor-rosa
+                    color: variables.$cor-rosa
+
+            .line
+                content: ''
+                position: relative  
+
+                @include mixins.center
+                margin: auto
+
+                margin-top: 25px 
+                width: 250px
+                border: 2px solid variables.$cor-ciano
+
+            .frase-impactante
+                width: 265px
+                margin: auto
+                text-align: center
+                font-size: 20px
+                margin-top: 25px
+                font-weight: 300
+                color: variables.$cor-fonte-maisCalara
+
+
+            .area-contact-content   
+                @include mixins.center
+                margin-top: 10% 
+
+                .link-curriculo-btn
+                    @include mixins.center
+                    text-decoration: none
+                    margin-top: 35px
+
+                    .curriculo-btn
+                        width: 250px
+                        height: 90px
+                        @include mixins.center
+                        border: 2px solid variables.$cor-ciano
+                        border-radius: 20px
+                        color: variables.$cor-rosa
+                        font-size: 20px
+                        font-weight: bold
+                        background: variables.$fundo-cinza
+                        
+                .meios-de-contato
+                    @include mixins.center
+                    flex-direction: row
+                    gap: 20px
+                    margin-top: 40px
+
+                    a
+                        color: variables.$cor-fonte-maisCalara
+                        text-decoration: none
+                        
+                        i
+                            font-size: 50px
+        
