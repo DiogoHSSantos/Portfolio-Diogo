@@ -18,7 +18,7 @@ const About = ()=>{
                     sou um cara muito estudioso, concentrado nos meus objetivos e determinado sobre onde quero chegar.
                     <br/>
                     <br/>
-                    Espero que você se interesse por meu trabalho e depois de conversarmos, que possamos trabalhar jutos e que eu possa demonstrar minhas abilidades em trabalho.
+                    Espero que você se interesse por meu trabalho, e depois de conversarmos, que possamos trabalhar juntos para que eu possa demonstrar minhas habilidades em trabalho.
                 </p>
             </div>
         </section>
